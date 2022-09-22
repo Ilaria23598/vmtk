@@ -108,7 +108,7 @@ if( VMTK_USE_SUPERBUILD )
   endif( NOT GIT_EXECUTABLE )
 
   option( GIT_PROTOCOL_HTTPS
-    "Use HTTPS for git access (useful if behind a firewall)" OFF )
+    "Use HTTPS for git access (useful if behind a firewall)" ON )
   if( GIT_PROTOCOL_HTTPS )
     set( GIT_PROTOCOL "https" CACHE STRING "Https protocol for file transfer" FORCE )
   else( GIT_PROTOCOL_HTTPS )
