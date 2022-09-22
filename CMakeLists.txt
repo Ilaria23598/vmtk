@@ -55,7 +55,7 @@ endif( VMTK_USE_X )
 #-----------------------------------------------------------------------------
 # ITK setup
 option( USE_SYSTEM_ITK
-  "Exclude ITK from SuperBuild and use an existing build instead." ON )
+  "Exclude ITK from SuperBuild and use an existing build instead." OFF )
 if( USE_SYSTEM_ITK )
   find_package( ITK REQUIRED )
   include( ${ITK_USE_FILE} )
